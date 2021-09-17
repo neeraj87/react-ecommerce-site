@@ -18,6 +18,7 @@ Dillinger uses a number of open source projects to work properly:
 - [Commerce.js](https://commercejs.com/) - API-first, headless commerce backend for ultimate eCommerce control
 - [React Material UI](https://material-ui.com/) - React material ui framework.
 - [React Material Icons](https://mui.com/components/material-icons/) - Icons based on material ui
+- [React Hook Forms](https://react-hook-form.com/) - Performant, flexible and extensible forms with easy-to-use validation 
 - [Stripe](https://stripe.com/en-in) - Online payment processing for internet businesses
 
 ## Live Site
