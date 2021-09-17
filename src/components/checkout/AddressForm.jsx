@@ -54,7 +54,7 @@ const AddressForm = ({ checkoutToken, next }) => {
         <>
             <Typography variant="h6" gutterBottom>Shipping Address</Typography>
             <FormProvider {...methods}>
-                <form onSubmit={methods.handleSubmit((data) => next({ ...data, shippingCountry, shippingSubDivision }))}>
+                <form onSubmit={methods.handleSubmit((data) => next({...data, shippingCountry, shippingSubDivision }))}>
                     <Grid container spacing={3}>
                         <CustomTextField required name="firstName" label="First Name"/>
                         <CustomTextField required name="lastName" label="Last Name"/>

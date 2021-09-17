@@ -42,8 +42,8 @@ const Checkout = ({ cart }) => {
     return (
         <>
             <CssBaseline/>
-            <div classeName={classes.toolbar}></div>
-            <main classeName={classes.layout}>
+            <div className={classes.toolbar}></div>
+            <main className={classes.layout}>
                 <Paper className={classes.paper}>
                     <Typography variant="h6">Shipping Address</Typography>
                     <Stepper activeStep={activeStep} className={classes.stepper}>
