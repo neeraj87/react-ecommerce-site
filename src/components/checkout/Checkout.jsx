@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Paper, Stepper, Step, StepLabel, Typography } from "@material-ui/core";
+import { Paper, Stepper, Step, StepLabel, Typography, CssBaseline } from "@material-ui/core";
 import useStyles from './styles';
 import AddressForm from "./AddressForm";
 import PaymentForm from "./PaymentForm";
@@ -41,6 +41,7 @@ const Checkout = ({ cart }) => {
 
     return (
         <>
+            <CssBaseline/>
             <div classeName={classes.toolbar}></div>
             <main classeName={classes.layout}>
                 <Paper className={classes.paper}>

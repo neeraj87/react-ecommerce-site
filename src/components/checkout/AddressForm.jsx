@@ -6,7 +6,18 @@ import { commerce } from '../../lib/commerce';
 import { Link } from "react-router-dom";
 
 const AddressForm = ({ checkoutToken, next }) => {
-    const methods = useForm();
+    const methods = useForm({
+        mode: 'onSubmit',
+        reValidateMode: 'onChange',
+        defaultValues: {},
+        resolver: undefined,
+        context: undefined,
+        criteriaMode: "firstError",
+        shouldFocusError: true,
+        shouldUnregister: false,
+        shouldUseNativeValidation: false,
+        delayError: undefined
+      });
     
     const [shippingCountries, setShippingCountries] = useState([]);
     const [shippingCountry, setShippingCountry] = useState('');
@@ -30,7 +41,7 @@ const AddressForm = ({ checkoutToken, next }) => {
 
     useEffect(() => {
         fetchShippingCountries(checkoutToken.id)
-    }, []);
+    });
 
     //this useEffect has one dependency on shippingCountry > so whenever a shippingCountry changes we call this useEffect
     useEffect(() => {
